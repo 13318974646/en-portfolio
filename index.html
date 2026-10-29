@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chenxi Fu — mechanical design, robotics equipment R&D, SolidWorks modelling and simulation, machine vision and embedded systems.">
+  <title>Chenxi Fu — Mechanical Design / Robotics Portfolio</title>
+
+  <!-- 浏览器标签页小图标：一粒灰绿黏土 -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='30' fill='%2384937a'/%3E%3Ccircle cx='23' cy='21' r='8' fill='%23f7f5ee' opacity='.55'/%3E%3C/svg%3E">
+
+  <!-- 站点样式：颜色、排版、首屏与各区块样式都在这里 -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+</head>
+<body>
+
+  <a class="skip-link" href="#works">Skip to selected work</a>
+
+  <!-- =========================================================
+       Fixed navigation
+       English is the primary language; Chinese is used only for small
+       subtitles and supporting labels.
+       ========================================================= -->
+  <header class="site-nav" id="siteNav">
+    <div class="site-nav__inner">
+      <a class="brand" href="#top" aria-label="Back to home">
+        <span class="brand__ball" aria-hidden="true"></span>
+        <span class="brand__name">CHENXI FU</span>
+        <sup class="brand__mark">®</sup>
+      </a>
+
+      <nav class="nav-links" aria-label="Main navigation">
+        <a class="nav-link is-active" href="#top" data-nav="top">Home</a>
+        <a class="nav-link" href="#about" data-nav="about">About</a>
+        <a class="nav-link" href="#work-1" data-nav="work-1">Vacuum</a>
+        <a class="nav-link" href="#work-2" data-nav="work-2">Pineapple</a>
+        <a class="nav-link" href="#work-3" data-nav="work-3">Mini</a>
+      </nav>
+
+      <a class="nav-contact" href="mailto:2169490740@qq.com">Get in touch <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="nav-progress" aria-hidden="true"><i id="navProgress"></i></div>
+  </header>
+
+  <main>
+
+    <!-- =========================================================
+         Hero
+         - Light editorial layout: big black type on the left,
+           the huge robot video cropped on the right, no CRT frame
+         ========================================================= -->
+    <div class="hero-pin" id="heroPin">
+      <section class="hero" id="top" aria-labelledby="hero-title">
+        <div class="hero__bg" aria-hidden="true">
+          <div class="aurora">
+            <span class="aurora__blob aurora__blob--1"></span>
+            <span class="aurora__blob aurora__blob--2"></span>
+            <span class="aurora__blob aurora__blob--3"></span>
+            <span class="aurora__blob aurora__blob--4"></span>
+          </div>
+        </div>
+
+        <div class="hero__robot" aria-hidden="true">
+          <video
+            id="crtVideo"
+            src="./assets/crt-robot.mp4"
+            poster="./assets/crt-robot-poster.jpg"
+            autoplay
+            muted
+            loop
+            playsinline
+            preload="auto"
+            disablepictureinpicture
+            aria-hidden="true"></video>
+        </div>
+
+        <div class="hero__content">
+          <h1 class="hero__title" id="hero-title">
+            Ideas,<br>
+            made<br>
+            tangible.
+          </h1>
+
+          <p class="hero__lede">
+            Mechanical design for robotics equipment — whole-machine structure,
+            3D modelling and simulation, machine vision and embedded systems.
+          </p>
+
+          <div class="hero__actions">
+            <a class="pill pill--solid" href="#works">View selected work <span aria-hidden="true">↘</span></a>
+            <a class="pill pill--ghost" href="mailto:2169490740@qq.com">Say hello <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+
+        <div class="hero__footer">
+          <p class="hero__scroll">
+            <span class="hero__line" aria-hidden="true"></span>
+            <span>Scroll for selected work</span>
+            <span class="cn" lang="zh-CN">向下滚动</span>
+          </p>
+        </div>
+      </section>
+    </div><!-- /.hero-pin -->
+
+    <!-- =========================================================
+         Profile / About
+         ========================================================= -->
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="about__wrap">
+        <div class="about__intro reveal">
+          <p class="eyebrow"><span class="eyebrow__dot"></span>01 — PROFILE <span class="cn" lang="zh-CN">/ 个人简介</span></p>
+          <h2 class="about__title" id="about-title">Mechanical design<br>for real machines.</h2>
+          <p class="about__lede">
+            I am Chenxi Fu, a mechanical design student at Liaoning Technical University,
+            working toward robotics equipment R&amp;D. My work spans whole-machine structural
+            design, 3D modelling and simulation, machine vision and embedded development.
+            I care about engineering execution and real-world validation — and I stay with
+            hard problems until they work.
+          </p>
+          <p class="about__cn cn" lang="zh-CN">目标感清晰，深耕机器人装备研发方向，擅长整机结构方案设计、三维建模仿真、机器视觉与嵌入式开发，注重工程落地与实际验证，执行力强，愿意沉下心攻克技术难题。</p>
+
+          <div class="about__contact">
+            <a href="mailto:2169490740@qq.com">2169490740@qq.com</a>
+            <a href="tel:+8613318974644">133 1897 4644</a>
+            <span>Zhuhai, China</span>
+          </div>
+        </div>
+
+        <aside class="about__panel reveal">
+          <div class="profile__row">
+            <span class="profile__label">Name</span>
+            <p>Chenxi Fu <span class="profile__cn">付晨希</span></p>
+          </div>
+          <div class="profile__row">
+            <span class="profile__label">Education</span>
+            <p>Liaoning Technical University<br><small>Mechanical Design, Manufacturing and Automation · Intelligent Manufacturing micro-major, in progress</small><br><span class="profile__cn">辽宁工程技术大学 · 机械设计制造及其自动化（智能制造微专业）在读</span></p>
+          </div>
+          <div class="profile__row">
+            <span class="profile__label">English</span>
+            <p>CET-4 555 · CET-6 485</p>
+          </div>
+          <div class="profile__row">
+            <span class="profile__label">Honours</span>
+            <p>First-class University Scholarship · University Merit Student · 1 academic paper published</p>
+          </div>
+          <div class="profile__row">
+            <span class="profile__label">Competitions</span>
+            <p>2 national awards · 9 provincial awards · 7 university awards<br><small>Leader of a national-level innovation project</small></p>
+          </div>
+          <div class="profile__row profile__row--skills">
+            <span class="profile__label">Skills</span>
+            <div>
+              <p class="profile__skill-title">3D modelling &amp; simulation</p>
+              <div class="specs__tags"><span>SolidWorks</span><span>Inventor</span><span>KeyShot</span></div>
+              <p class="profile__skill-title">Programming</p>
+              <div class="specs__tags"><span>Python</span><span>C</span><span>Arduino</span><span>ESP32</span><span>8051</span><span>PLC 200-SMART</span></div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         Selected work
+         Images are left empty on purpose. Replace them later by
+         removing is-empty and adding an <img> (see comments below).
+         ========================================================= -->
+    <section class="works" id="works" aria-labelledby="works-title">
+      <div class="works__head">
+        <p class="eyebrow reveal"><span class="eyebrow__dot"></span>02 — SELECTED WORK <span class="cn" lang="zh-CN">/ 精选作品</span></p>
+
+        <div class="works__title-row">
+          <h2 class="works__title reveal" id="works-title">Three projects,<br>three ways of making.</h2>
+          <div class="works__desc reveal">
+            <p>From agricultural robotics and modular hardware to a full-stack mini program — three projects, three kinds of engineering.</p>
+            <p class="cn" lang="zh-CN">从机械结构到数字界面，记录想法落地的过程。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="cards">
+        <!-- Work 01 -->
+        <a class="card reveal" href="#work-1" data-tilt aria-label="View project 01: Separable Mother-Child Robot Vacuum">
+          <div class="card__media">
+            <!-- Replace image: remove is-empty, then add
+                 <img class="card__img" src="./assets/works/work-01.jpg" alt="..."> -->
+            <div class="ph" aria-hidden="true">
+              <span class="ph__mesh"></span>
+              <svg class="ph__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4">
+                <rect x="10" y="24" width="44" height="24" rx="10"></rect>
+                <path d="M20 24v-3a4 4 0 0 1 4-4h16a4 4 0 0 1 4 4v3"></path>
+                <circle cx="32" cy="21" r="3"></circle>
+                <circle cx="23" cy="38" r="3"></circle>
+                <circle cx="41" cy="38" r="3"></circle>
+                <path d="M28 32h8"></path>
+              </svg>
+              <span class="ph__label">IMAGE 01 · 4:3</span>
+            </div>
+            <img class="card__img" src="./assets/works/work-01-vacuum.jpg" alt="Separable mother-child robot vacuum — KeyShot render">
+            <span class="card__num" aria-hidden="true">01</span>
+            <span class="card__go" aria-hidden="true">↗</span>
+          </div>
+
+          <div class="card__body">
+            <p class="card__kicker">Product design · Mother-child modular</p>
+            <h3 class="card__title">Separable<br>Mother-Child Vacuum</h3>
+            <p class="card__cn cn" lang="zh-CN">可分离式子母模块化扫地机器人</p>
+            <p class="card__desc">A round mother unit carries 55 mm cube sub-units with EPM electric-permanent-magnet docking, releasing them into gaps and corners the main body cannot reach.</p>
+            <div class="card__tags"><span>EPM docking</span><span>55 mm</span><span>SolidWorks</span></div>
+          </div>
+        </a>
+
+        <!-- Work 02 -->
+        <a class="card reveal" href="#work-2" data-tilt aria-label="View project 02: Pineapple Harvesting Robot">
+          <div class="card__media">
+            <div class="ph" aria-hidden="true">
+              <span class="ph__mesh"></span>
+              <svg class="ph__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4">
+                <path d="M32 9 54 21v22L32 55 10 43V21L32 9Z"></path>
+                <path d="M10 21l22 12 22-12M32 33v22"></path>
+                <path d="M21 15l22 12v11"></path>
+              </svg>
+              <span class="ph__label">IMAGE 02 · 4:3</span>
+            </div>
+            <img class="card__img" src="./assets/works/work-02-pineapple.jpg" alt="Pineapple harvesting robot — SolidWorks / KeyShot render">
+            <span class="card__num" aria-hidden="true">02</span>
+            <span class="card__go" aria-hidden="true">↗</span>
+          </div>
+
+          <div class="card__body">
+            <p class="card__kicker">Agricultural robotics · AGV + YOLO</p>
+            <h3 class="card__title">Pineapple<br>Harvesting Robot</h3>
+            <p class="card__cn cn" lang="zh-CN">智能菠萝采收机器人</p>
+            <p class="card__desc">An autonomous pineapple harvester combining AGV magnetic guidance, YOLOv8 vision and a full mechanical / electrical system.</p>
+            <div class="card__tags"><span>AGV</span><span>YOLOv8</span><span>Harvesting</span></div>
+          </div>
+        </a>
+
+        <!-- Work 03 -->
+        <a class="card reveal" href="#work-3" data-tilt aria-label="View project 03: New Persimmon Mini Program">
+          <div class="card__media">
+            <div class="ph" aria-hidden="true">
+              <span class="ph__mesh"></span>
+              <svg class="ph__icon" viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="1.4">
+                <rect x="19" y="8" width="26" height="48" rx="7"></rect>
+                <path d="M28 13h8M27 50h10"></path>
+                <path d="M25 22h14M25 29h9M25 36h14"></path>
+                <circle cx="39" cy="41" r="3"></circle>
+              </svg>
+              <span class="ph__label">IMAGE 03 · 4:3</span>
+            </div>
+            <img class="card__img" src="./assets/works/work-03-mini.jpg" alt="New Persimmon parent-child heritage mini program — interface screens">
+            <span class="card__num" aria-hidden="true">03</span>
+            <span class="card__go" aria-hidden="true">↗</span>
+          </div>
+
+          <div class="card__body">
+            <p class="card__kicker">WeChat Mini Program · Full-stack</p>
+            <h3 class="card__title">New Persimmon<br>Heritage Platform</h3>
+            <p class="card__cn cn" lang="zh-CN">「新柿界」亲子非遗体验平台</p>
+            <p class="card__desc">An independent full-stack WeChat Mini Program for parent-child heritage experiences — AI identity, tasks, check-in and community.</p>
+            <div class="card__tags"><span>Mini Program</span><span>WeChat Cloud</span><span>Full-stack</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         Work 01 detail
+         ========================================================= -->
+    <section class="detail detail--paper" id="work-1" aria-labelledby="work-1-title">
+      <div class="detail__wrap">
+        <header class="detail__head">
+          <div class="detail__index reveal"><span>01</span><i aria-hidden="true"></i></div>
+
+          <div class="detail__headings reveal">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>WORK 01 / PRODUCT DESIGN</p>
+            <h2 id="work-1-title">Separable<br>Mother-Child Vacuum</h2>
+            <p class="detail__cn cn" lang="zh-CN">可分离式子母模块化扫地机器人</p>
+          </div>
+
+          <div class="detail__summary reveal">
+            <p>A separable mother-child modular robot vacuum for tight spaces and zoned cleaning. The round mother unit navigates autonomously and carries multiple 55 mm cube sub-units; EPM electric-permanent-magnet docking lets it release a sub-unit into a gap or corner and recover it after cleaning. Full 3D structure, parts and assembly are complete in SolidWorks, with KeyShot appearance renders; physical prototyping and testing are not yet started.</p>
+            <dl class="detail__meta">
+              <div><dt>Role</dt><dd>Project Lead</dd></div>
+              <div><dt>Tool</dt><dd>SolidWorks / KeyShot</dd></div>
+              <div><dt>Year</dt><dd>2026.08–2026.10</dd></div>
+            </dl>
+          </div>
+        </header>
+
+        <div class="tech-block">
+          <div class="tech-block__copy reveal">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>01 / OVERALL MACHINE</p>
+            <h3>Overall Exterior Form</h3>
+            <p>The orthographic multi-view presents the overall exterior form of the modular cleaning mother robot, including front, top and side projections. It demonstrates chassis outline, driving wheels, obstacle-avoidance structure, shell profile and external magnetic docking interface. This sheet establishes the overall dimension and external layout before exploring internal structure and sub-unit details.</p>
+            <p class="cn" lang="zh-CN">本正交多视图展示模块化清扫母机的整体外观形态，包含主视图、俯视图、侧视图。表达底盘轮廓、行走轮、越障结构、外壳造型与外部磁吸对接接口。该视图在剖析内部结构与子单元细节之前，确立整机外形尺寸与外部布局。</p>
+          </div>
+          <div class="tech-block__media">
+            <figure class="frame frame--plate reveal">
+              <img src="./assets/works/vacuum-01-full.png" alt="Full assembly chassis and docking interface — orthographic and isometric views">
+              <figcaption><span>FIG. 01</span> Overall machine — exterior views <span class="cn" lang="zh-CN">/ 整机结构视图</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tech-block tech-block--reverse">
+          <div class="tech-block__copy reveal">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>02 / MOTHER UNIT</p>
+            <h3>Mother Unit Exterior Form</h3>
+            <p>The orthographic multi-view presents the overall exterior form of the modular cleaning mother unit, including front, top and side projections. It demonstrates chassis outline, driving wheels, obstacle-avoidance structure, shell profile and external magnetic docking interface. This sheet establishes the overall dimension and external layout before exploring internal structure and sub-unit details.</p>
+            <p class="cn" lang="zh-CN">本正交多视图展示模块化清扫<strong>母单元</strong>的整体外观形态，包含主视图、俯视图、侧视图。表达底盘轮廓、行走轮、越障结构、外壳造型与外部磁吸对接接口。该视图在剖析内部结构与子单元细节之前，确立整机外形尺寸与外部布局。</p>
+          </div>
+          <div class="tech-block__media">
+            <figure class="frame frame--plate reveal">
+              <img src="./assets/works/vacuum-02-mother.png" alt="Mother unit exterior — orthographic and isometric views">
+              <figcaption><span>FIG. 02</span> Mother unit — exterior views <span class="cn" lang="zh-CN">/ 母单元系统结构视图</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tech-block">
+          <div class="tech-block__copy reveal">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>03 / SUB-UNIT</p>
+            <h3>Detachable Cleaning Sub-unit</h3>
+            <p>The cubic sub-unit is an independent modular cleaning module. Orthographic and isometric views show its outer contour, magnetic docking face and internal installation envelope.</p>
+            <p class="cn" lang="zh-CN">可拆卸清扫子单元 · 立方体子单元为模块化独立清扫模块，展示外形轮廓、磁吸对接面与安装边界。</p>
+          </div>
+          <div class="tech-block__media">
+            <figure class="frame frame--plate reveal">
+              <img src="./assets/works/vacuum-03-sub.png" alt="Detachable cleaning sub-unit — orthographic and isometric views" loading="lazy">
+              <figcaption><span>FIG. 03</span> Sub-unit — exterior views <span class="cn" lang="zh-CN">/ 子单元外观多视图</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="tech-block tech-block--wide">
+          <div class="tech-block__copy reveal">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>04 / INTERNAL LAYOUT</p>
+            <h3>Internal Layout — Cutaway</h3>
+            <p>The cutaway pair reveals the mother unit's water tank, dust box, navigation system and EPM magnetic docking mechanism, alongside the sub-unit's three-layer stack — power, electronics and cleaning — with the camera, magnetic assembly and caster installation positions marked.</p>
+            <p class="cn" lang="zh-CN">内部布局（剖视）· 母机展示蓄水箱、积尘箱、导航系统与 EPM 磁吸对接机构；子单元展示动力层、电控层、清洁层三层堆叠，并标注前置摄像头、磁吸组件与万向轮安装位置。</p>
+          </div>
+          <div class="tech-block__media">
+            <figure class="frame frame--plate reveal">
+              <img src="./assets/works/vacuum-04-cutaway-pair.png" alt="Mother unit and sub-unit cutaway — internal components and three-layer layout" loading="lazy">
+              <figcaption><span>FIG. 04</span> Mother + sub-unit — cutaway <span class="cn" lang="zh-CN">/ 母机与子单元剖视</span></figcaption>
+            </figure>
+          </div>
+        </div>
+
+        <div class="detail__content">
+          <div class="prose reveal">
+            <h3>Overview</h3>
+            <p>The project targets tight spaces and zoned cleaning with a separable mother-child modular robot vacuum. The round mother unit navigates and carries several 55 mm cube sub-units; each sub-unit is an independent micro cleaning module. An EPM electric-permanent-magnet interface handles fast docking and release: the mother unit carries a sub-unit to the target area, releases it into a narrow gap or corner, and recovers it by magnetic docking when cleaning is done.</p>
+            <p>All 3D structure is complete: part modelling and assembly in SolidWorks, appearance rendering in KeyShot. The machine has not yet been physically prototyped or tested.</p>
+
+            <h3>Work</h3>
+            <ol class="steps">
+              <li><span>01</span><div><b>Overall architecture</b><p>Defined the mother-child separation concept: round mother-unit chassis and 55 mm cube sub-units. Planned the sub-unit's three internal layers — power, dust / airflow, and electronics / sensing.</p></div></li>
+              <li><span>02</span><div><b>Mechanical structure</b><p>Mother unit: obstacle-crossing wheel set, side brush and bumper. Sub-unit: drive wheels, caster, micro centrifugal blower and brush cleaning structure. Designed the EPM docking mechanism with locating pins for precise alignment and reserved a Pogo Pin electrical interface.</p></div></li>
+              <li><span>03</span><div><b>Component selection &amp; space check</b><p>Selected a micro cylindrical EPM, MPU6050 attitude module, infrared obstacle sensors and a micro centrifugal fan within the 55 mm envelope. Completed internal layout and interference checks in SolidWorks, fixing base plate, shell wall thickness, wheel and brush dimensions.</p></div></li>
+              <li><span>04</span><div><b>3D modelling &amp; assembly</b><p>Modelled all parts and assemblies in SolidWorks, including the magnetic docking mechanism, articulated obstacle-crossing wheel structure and fan duct, with the required constraints.</p></div></li>
+              <li><span>05</span><div><b>Rendering &amp; visualisation</b><p>Used KeyShot for materials and camera views — plastic shell, metal magnetic parts, rubber wheels, nylon brush and infrared filter — producing paper-ready renders on a pure white background for the thesis and defence.</p></div></li>
+            </ol>
+
+            <h3>Innovation</h3>
+            <ul class="bullets">
+              <li><b>Modular magnetic separation</b><span>EPM docking gives fast attach / release. Unlike an integrated robot vacuum, the sub-units split off to clean under furniture and in narrow gaps the mother unit cannot enter, extending coverage.</span></li>
+              <li><b>Compact three-layer sub-unit</b><span>Walking drive, blow / suction duct, attitude sensing and obstacle sensing are integrated in a 55 mm cube. Locating pins assist magnetic alignment, solving the offset and misalignment of purely magnetic docking.</span></li>
+              <li><b>Combined cleaning</b><span>A micro centrifugal blower plus side brush uses a "blow + sweep" method: the fan lifts dust from gaps and the brush collects it, improving cleaning in tight areas.</span></li>
+              <li><b>Passive articulated obstacle crossing</b><span>The mother unit uses a passive articulated wheel set; a mechanical lever handles obstacle crossing without a complex active drive, keeping the structure simple and reliable and lowering control difficulty.</span></li>
+            </ul>
+          </div>
+
+          <aside class="specs reveal">
+            <h3>Project info</h3>
+            <dl>
+              <div><dt>Type</dt><dd>Product design R&amp;D</dd></div>
+              <div><dt>Scope</dt><dd>Concept / Structure / 3D / Rendering</dd></div>
+              <div><dt>Software</dt><dd>SolidWorks / KeyShot</dd></div>
+              <div><dt>Status</dt><dd>3D model &amp; renders complete; prototype not built</dd></div>
+              <div><dt>Keywords</dt><dd>Mother-child / EPM docking / Modular</dd></div>
+            </dl>
+            <div class="specs__tags"><span>SolidWorks</span><span>KeyShot</span><span>EPM</span><span>Modular</span></div>
+          </aside>
+        </div>
+
+        <div class="bom reveal">
+          <div class="bom__head">
+            <div>
+              <p class="eyebrow"><span class="eyebrow__dot"></span>BOM / MOTHER-CHILD</p>
+              <h3>Mother-child assembly BOM</h3>
+            </div>
+            <span class="bom__hint">41 items · scroll to view</span>
+          </div>
+
+          <div class="bom__tablewrap" tabindex="0" aria-label="Bill of materials, scrollable table">
+            <table class="bom__table">
+              <thead>
+                <tr>
+                  <th>No.</th><th>Component</th><th>Description</th><th>Qty</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr><td>01</td><td>越障轮</td><td class="bom__desc">底部越障辅助轮</td><td>16</td></tr>
+                <tr><td>02</td><td>底盘</td><td class="bom__desc">整机底盘骨架</td><td>3</td></tr>
+                <tr><td>03</td><td>刷子</td><td class="bom__desc">清扫毛刷</td><td>2</td></tr>
+                <tr><td>04</td><td>垃圾箱</td><td class="bom__desc">集尘垃圾箱</td><td>1</td></tr>
+                <tr><td>05</td><td>EPM</td><td class="bom__desc">磁吸对接模块</td><td>32</td></tr>
+                <tr><td>06</td><td>电池</td><td class="bom__desc">供电电池</td><td>5</td></tr>
+                <tr><td>07</td><td>万向轮</td><td class="bom__desc">底部万向从动轮</td><td>8</td></tr>
+                <tr><td>08</td><td>边刷</td><td class="bom__desc">主清扫边刷</td><td>12</td></tr>
+                <tr><td>09</td><td>外壳</td><td class="bom__desc">整机外壳</td><td>2</td></tr>
+                <tr><td>10</td><td>防撞板</td><td class="bom__desc">前部防撞缓冲板</td><td>1</td></tr>
+                <tr><td>11</td><td>垫片</td><td class="bom__desc">安装垫片</td><td>1</td></tr>
+                <tr><td>12</td><td>螺母</td><td class="bom__desc">紧固螺母</td><td>1</td></tr>
+                <tr><td>13</td><td>子单元</td><td class="bom__desc">可拆卸清洁子单元</td><td>24</td></tr>
+                <tr><td>14</td><td>子单元_mini齿轮</td><td class="bom__desc">子单元微型传动齿轮</td><td>8</td></tr>
+                <tr><td>15</td><td>子单元_大齿轮</td><td class="bom__desc">子单元大型传动齿轮</td><td>8</td></tr>
+                <tr><td>16</td><td>子单元_小齿轮</td><td class="bom__desc">子单元小型传动齿轮</td><td>8</td></tr>
+                <tr><td>17</td><td>子单元_中齿轮</td><td class="bom__desc">子单元中型传动齿轮</td><td>16</td></tr>
+                <tr><td>18</td><td>子单元_电机</td><td class="bom__desc">子单元驱动电机</td><td>8</td></tr>
+                <tr><td>19</td><td>子单元_外壳把手</td><td class="bom__desc">子单元提拉把手</td><td>8</td></tr>
+                <tr><td>20</td><td>子单元_转动轴</td><td class="bom__desc">子单元传动轴</td><td>32</td></tr>
+                <tr><td>21</td><td>子单元_小齿轮垫片</td><td class="bom__desc">子单元小齿轮安装垫片</td><td>8</td></tr>
+                <tr><td>22</td><td>子单元大齿轮头</td><td class="bom__desc">子单元大齿轮端盖</td><td>8</td></tr>
+                <tr><td>23</td><td>子单元_齿轮包裹</td><td class="bom__desc">子单元齿轮防护壳</td><td>4</td></tr>
+                <tr><td>24</td><td>子单元_轮子外壳</td><td class="bom__desc">子单元轮子外罩</td><td>8</td></tr>
+                <tr><td>25</td><td>子单元_轮子外壳右边</td><td class="bom__desc">子单元右侧轮子外罩</td><td>8</td></tr>
+                <tr><td>26</td><td>子单元_清洁箱</td><td class="bom__desc">子单元清洁尘箱</td><td>12</td></tr>
+                <tr><td>27</td><td>子单元_万向轮</td><td class="bom__desc">子单元万向从动轮</td><td>24</td></tr>
+                <tr><td>28</td><td>红外避障传感器</td><td class="bom__desc">红外避障传感器</td><td>4</td></tr>
+                <tr><td>29</td><td>陀螺仪</td><td class="bom__desc">姿态检测陀螺仪</td><td>4</td></tr>
+                <tr><td>30</td><td>蜂鸣器</td><td class="bom__desc">提示蜂鸣器</td><td>4</td></tr>
+                <tr><td>31</td><td>鼓风机</td><td class="bom__desc">负压吸尘鼓风机</td><td>16</td></tr>
+                <tr><td>32</td><td>鼓风机_吹风机</td><td class="bom__desc">鼓风机出风组件</td><td>8</td></tr>
+                <tr><td>33</td><td>子单元_尘盒</td><td class="bom__desc">子单元集尘盒</td><td>4</td></tr>
+                <tr><td>34</td><td>子单元_前目</td><td class="bom__desc">子单元前置摄像头</td><td>8</td></tr>
+                <tr><td>35</td><td>子单元_前目挡板</td><td class="bom__desc">前摄像头挡板</td><td>4</td></tr>
+                <tr><td>36</td><td>前目主控板</td><td class="bom__desc">前置主控板</td><td>4</td></tr>
+                <tr><td>37</td><td>子单元_微型圆柱 EPM</td><td class="bom__desc">子单元微型圆柱磁吸模块</td><td>16</td></tr>
+                <tr><td>38</td><td>子单元镜像</td><td class="bom__desc">子单元对称镜像件</td><td>4</td></tr>
+                <tr><td>39</td><td>子单元_齿轮包裹镜像</td><td class="bom__desc">子单元齿轮防护壳镜像件</td><td>4</td></tr>
+                <tr><td>40</td><td>清洗盘</td><td class="bom__desc">清洁清洗盘</td><td>1</td></tr>
+                <tr><td>41</td><td>活水器</td><td class="bom__desc">活水清洁器</td><td>4</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="bom__note">* BOM 共 41 项，表格区域内上下滚动查看。</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         Work 02 detail
+         ========================================================= -->
+    <section class="detail detail--tint" id="work-2" aria-labelledby="work-2-title">
+      <div class="detail__wrap">
+        <header class="detail__head">
+          <div class="detail__index reveal"><span>02</span><i aria-hidden="true"></i></div>
+
+          <div class="detail__headings reveal">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>WORK 02 / AGRICULTURAL ROBOTICS</p>
+            <h2 id="work-2-title">Pineapple Harvesting<br>Robot</h2>
+            <p class="detail__cn cn" lang="zh-CN">智能菠萝采收机器人</p>
+          </div>
+
+          <div class="detail__summary reveal">
+            <p>A fully autonomous pineapple harvesting robot built around AGV magnetic guidance and YOLO-based vision. I led the project and completed the whole machine from zero to one — SolidWorks structure and motion simulation, mechanical / conveying / cutting mechanisms, a layered electrical architecture and a field-specific vision dataset. It closes the loop from row following and fruit localisation to cutting, weight capture, headland turning and full-bin alerts.</p>
+            <dl class="detail__meta">
+              <div><dt>Role</dt><dd>Project Lead</dd></div>
+              <div><dt>Tool</dt><dd>SolidWorks / Python / YOLOv8</dd></div>
+              <div><dt>Year</dt><dd>2025.09–2026.06</dd></div>
+            </dl>
+          </div>
+        </header>
+
+        <div class="tech-block tech-block--wide">
+          <div class="tech-block__copy reveal">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>02 / MACHINE FORM</p>
+            <h3>Exterior &amp; Mechanism</h3>
+            <p>Built as a complete machine model: six-wheel AGV chassis, inclined wave-baffle conveyor, lead-screw lifting cutting head, collection bin and the full electrical stack. The shaded model and line drawing share the same four-view layout — one shows form and material, the other exposes the mechanism and structure.</p>
+            <p class="cn" lang="zh-CN">整机三维模型与线稿采用同一套四视图布局：六轮 AGV 底盘、波状挡板输送、丝杆滑台切割、收集箱与电控系统。一张看形体与材质，一张看结构与机构关系。</p>
+          </div>
+          <div class="tech-block__media">
+            <div class="gallery gallery--pair">
+              <figure class="frame frame--plate reveal">
+                <img src="./assets/works/pineapple-01-model.png" alt="Pineapple harvesting robot — 3D model three-view and isometric view">
+                <figcaption><span>FIG. 01</span> 3D model — three-view + isometric <span class="cn" lang="zh-CN">/ 三维模型三视图与轴测图</span></figcaption>
+              </figure>
+              <figure class="frame frame--plate reveal">
+                <img src="./assets/works/pineapple-02-lineart.png" alt="Pineapple harvesting robot — line drawing three-view and isometric view" loading="lazy">
+                <figcaption><span>FIG. 02</span> Line drawing — three-view + isometric <span class="cn" lang="zh-CN">/ 线稿三视图与轴测图</span></figcaption>
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="detail__content">
+          <div class="prose reveal">
+            <h3>Overview</h3>
+            <p>Pineapple harvesting in China still depends heavily on manual labour: the workforce gap is large, the field environment is harsh, and existing machines are difficult to deploy in real orchards. This project develops a fully automatic pineapple harvesting robot based on AGV magnetic guidance and YOLO machine vision.</p>
+            <p>I completed the whole machine from zero to one: the SolidWorks structure model and motion simulation, the mechanical, conveying and cutting mechanisms, and the full layered electrical system. The robot performs autonomous row following, fruit detection and localisation, automatic cutting, load-cell weight capture, headland turning and full-bin alerts.</p>
+
+            <h3>Main work</h3>
+            <ol class="steps">
+              <li><span>01</span><div><b>Mechanical structure</b><p>4040 aluminium six-wheel AGV chassis; inclined wave-baffle belt conveyor; lead-screw lifting circular cutter. Static stress and deformation simulation on rollers and conveying parts to validate stiffness and avoid belt deviation, fracture and deformation in the field.</p></div></li>
+              <li><span>02</span><div><b>Machine vision</b><p>A 902-image field dataset for YOLOv8 covering leaf occlusion, small targets and changing outdoor light. Inference confidence was tuned for the field; the model outputs fruit detection, localisation and the stalk cut point.</p></div></li>
+              <li><span>03</span><div><b>Electrical &amp; control</b><p>A six-unit layered architecture: power / safety, main control, sensing, motion drive, wireless and alarm. Magnetic guidance sensors, a stereo industrial camera and a load cell are integrated, with PID row following, vision-based headland turning, harvest closed-loop judgement and full-bin audible / visual alarm.</p></div></li>
+              <li><span>04</span><div><b>Data loop</b><p>Fruit images and weight are collected during harvesting, stored in a local field sample database and uploaded wirelessly to a host, continuously expanding the dataset and iterating the vision model.</p></div></li>
+            </ol>
+
+            <h3>Innovation</h3>
+            <ul class="bullets">
+              <li><b>Magnetic guidance</b><span>Multi-channel signal acquisition with segmented differential correction for bumpy orchards and electromagnetic interference.</span></li>
+              <li><b>Modular conveyor</b><span>External roller modules reduce belt deviation and can be replaced individually for field maintenance.</span></li>
+              <li><b>Active lifting cutter</b><span>A lead-screw slide lifts the cutting disc, adapting to stalk-height differences and reducing missed cuts versus a passive floating head.</span></li>
+              <li><b>Sensor base</b><span>Front semi-enclosed base with multi-axis adjustment, dust protection and impact protection for multiple sensors.</span></li>
+              <li><b>Harvest closed-loop</b><span>A pressure sensor judges whether harvesting succeeded; faults trigger an audible / visual warning.</span></li>
+              <li><b>Data business loop</b><span>Field collection → local storage → wireless upload → model iteration.</span></li>
+            </ul>
+          </div>
+
+          <aside class="specs reveal">
+            <h3>Project info</h3>
+            <dl>
+              <div><dt>Type</dt><dd>Agricultural equipment R&amp;D</dd></div>
+              <div><dt>Scope</dt><dd>Structure / Vision / Control</dd></div>
+              <div><dt>Software</dt><dd>SolidWorks / Python / YOLOv8</dd></div>
+              <div><dt>Keywords</dt><dd>AGV / Machine vision / Harvesting</dd></div>
+            </dl>
+            <div class="specs__tags"><span>SolidWorks</span><span>YOLOv8</span><span>Embedded</span><span>AGV</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================================================
+         Work 03 detail
+         ========================================================= -->
+    <section class="detail detail--paper" id="work-3" aria-labelledby="work-3-title">
+      <div class="detail__wrap">
+        <header class="detail__head">
+          <div class="detail__index reveal"><span>03</span><i aria-hidden="true"></i></div>
+
+          <div class="detail__headings reveal">
+            <p class="eyebrow"><span class="eyebrow__dot"></span>WORK 03 / MINI PROGRAM</p>
+            <h2 id="work-3-title">New Persimmon<br>Heritage Platform</h2>
+            <p class="detail__cn cn" lang="zh-CN">「新柿界」亲子非遗体验平台</p>
+          </div>
+
+          <div class="detail__summary reveal">
+            <p>An independent full-stack WeChat Mini Program for parent-child intangible-cultural-heritage experiences, built on WeChat Cloud Development. I delivered the complete front end and back end — authentication, cloud database, AI digital identity, a task / achievement system, offline event check-in and a UGC community — and wrote the business plan and defence deck.</p>
+            <dl class="detail__meta">
+              <div><dt>Role</dt><dd>Independent Full-stack Developer</dd></div>
+              <div><dt>Tool</dt><dd>WeChat Cloud / WXML / JS</dd></div>
+              <div><dt>Year</dt><dd>2025.12–2026.03</dd></div>
+            </dl>
+          </div>
+        </header>
+
+        <section class="screens" data-screens aria-label="Mini program screens">
+          <div class="screens__head">
+            <div>
+              <p class="eyebrow"><span class="eyebrow__dot"></span>SCREENS / 07 <span class="cn" lang="zh-CN">/ 界面展示</span></p>
+              <h3>Inside the mini program</h3>
+            </div>
+            <div class="screens__controls">
+              <span class="screens__hint">Auto-scroll · hover to pause</span>
+              <button class="screens__arrow screens__toggle" type="button" data-screen-toggle aria-label="Pause auto-scroll" aria-pressed="false">❚❚</button>
+              <button class="screens__arrow" type="button" data-screen-prev aria-label="Previous screen">←</button>
+              <button class="screens__arrow" type="button" data-screen-next aria-label="Next screen">→</button>
+            </div>
+          </div>
+          <div class="screen-carousel__viewport" tabindex="0" aria-label="Horizontal screen gallery">
+            <div class="screen-carousel__track">
+          <figure class="phone">
+            <div class="phone__screen">
+              <img class="phone__img" src="./assets/works/mini-01-growth.png" alt="Growth record screen with tree level, interaction stats and harvest count" loading="lazy">
+              <span class="phone__notch" aria-hidden="true"></span>
+            </div>
+            <figcaption><span>SCREEN 01</span> Growth record <span class="cn" lang="zh-CN">/ 成长记录</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <div class="phone__screen">
+              <img class="phone__img" src="./assets/works/mini-02-tasks.png" alt="Task management screen with heritage learning tasks" loading="lazy">
+              <span class="phone__notch" aria-hidden="true"></span>
+            </div>
+            <figcaption><span>SCREEN 02</span> Task management <span class="cn" lang="zh-CN">/ 任务管理</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <div class="phone__screen">
+              <img class="phone__img" src="./assets/works/mini-03-community.png" alt="Community feed with parent-child posts and comments" loading="lazy">
+              <span class="phone__notch" aria-hidden="true"></span>
+            </div>
+            <figcaption><span>SCREEN 03</span> Community <span class="cn" lang="zh-CN">/ 柿友圈</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <div class="phone__screen">
+              <img class="phone__img" src="./assets/works/mini-04-profile.png" alt="Profile screen with check-in days and collected fruit" loading="lazy">
+              <span class="phone__notch" aria-hidden="true"></span>
+            </div>
+            <figcaption><span>SCREEN 04</span> Profile <span class="cn" lang="zh-CN">/ 个人中心</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <div class="phone__screen">
+              <img class="phone__img" src="./assets/works/mini-05-ai-chat.png" alt="AI chat with the persimmon tree companion" loading="lazy">
+              <span class="phone__notch" aria-hidden="true"></span>
+            </div>
+            <figcaption><span>SCREEN 05</span> AI chat <span class="cn" lang="zh-CN">/ 与柿树对话</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <div class="phone__screen">
+              <img class="phone__img" src="./assets/works/mini-06-shop.png" alt="Decoration shop with birds and badges" loading="lazy">
+              <span class="phone__notch" aria-hidden="true"></span>
+            </div>
+            <figcaption><span>SCREEN 06</span> Decoration shop <span class="cn" lang="zh-CN">/ 装饰商城</span></figcaption>
+          </figure>
+          <figure class="phone">
+            <div class="phone__screen">
+              <img class="phone__img" src="./assets/works/mini-07-achievements.png" alt="Achievement badges screen" loading="lazy">
+              <span class="phone__notch" aria-hidden="true"></span>
+            </div>
+            <figcaption><span>SCREEN 07</span> Achievements <span class="cn" lang="zh-CN">/ 成就徽章</span></figcaption>
+          </figure>
+            </div>
+          </div>
+        </section>
+
+        <div class="detail__content">
+          <div class="prose reveal">
+            <h3>Overview</h3>
+            <p>A parent-child intangible-cultural-heritage experience platform, developed end-to-end as an independent full-stack developer on WeChat Cloud Development. The product has four core modules: AI digital identity, a task / achievement growth system, offline event check-in, and a UGC community.</p>
+            <p>Users upload a photo to generate a heritage-themed avatar, complete heritage check-in tasks to unlock achievements, scan event codes to verify offline participation, and publish text / image experiences to the community. I also completed the business plan and defence deck, aimed at cultural-tourism family scenarios and heritage communication.</p>
+
+            <h3>Four modules</h3>
+            <ul class="bullets">
+              <li><b>AI digital identity</b><span>Users upload a photo to generate a heritage-themed virtual avatar.</span></li>
+              <li><b>Task growth</b><span>Heritage check-in tasks unlock achievements and encourage parent-child participation.</span></li>
+              <li><b>Offline check-in</b><span>Scan-to-verify event registration and participation status for offline heritage experiences.</span></li>
+              <li><b>UGC community</b><span>Text and image experience posts build a heritage content-sharing community.</span></li>
+            </ul>
+          </div>
+
+          <aside class="specs reveal">
+            <h3>Project info</h3>
+            <dl>
+              <div><dt>Type</dt><dd>Self-initiated product</dd></div>
+              <div><dt>Scope</dt><dd>Product / Design / Full-stack</dd></div>
+              <div><dt>Tech</dt><dd>WeChat Cloud Development</dd></div>
+              <div><dt>Keywords</dt><dd>Heritage / Community / AI</dd></div>
+            </dl>
+            <div class="specs__tags"><span>Mini Program</span><span>WeChat Cloud</span><span>WXML / WXSS</span><span>JavaScript</span></div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================
+       Footer — name, portfolio line, contact. Replace the email.
+       ========================================================= -->
+  <footer class="footer" id="footer">
+    <div class="footer__inner">
+      <div class="footer__identity">
+        <p class="footer__name">Chenxi Fu <span class="footer__name-cn">付晨希</span></p>
+        <p class="footer__desc">Portfolio — Mechanical Design / Robotics / Mini Program</p>
+        <p class="footer__contact"><a href="mailto:2169490740@qq.com">2169490740@qq.com</a> · <a href="tel:+8613318974644">133 1897 4644</a> · Zhuhai</p>
+        <p class="footer__cn cn" lang="zh-CN">个人作品集</p>
+      </div>
+      <a class="footer__top" href="#top">Back to top <span aria-hidden="true">↑</span></a>
+    </div>
+  </footer>
+
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
